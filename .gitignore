@@ -19,3 +19,8 @@
 
 #JLINK file
 JLinkLog.txt
+
+#vscode log file
+User/.vscode/uv4.log
+User/.vscode/uv4.log.lock
+User/.vscode/keil-assistant.log

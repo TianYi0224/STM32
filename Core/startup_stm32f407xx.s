@@ -185,9 +185,9 @@ Reset_Handler    PROC
         IMPORT  SystemInit
         IMPORT  __main
 
-                 LDR     R0, =SystemInit
+                 LDR     R0, =SystemInit            ;这里是启动函数,在调用main函数之前会进行sys clock的初始化
                  BLX     R0
-                 LDR     R0, =__main
+                 LDR     R0, =__main                ;并不是所有c函数都是从main函数开始调用的!!
                  BX      R0
                  ENDP
 
